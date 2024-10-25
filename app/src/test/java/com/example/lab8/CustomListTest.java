@@ -35,6 +35,7 @@ public class CustomListTest {
         assertEquals(list.getCount(),listSize + 1);
     }
 
+    //The following tests are from ChatGPT, "Help with the following: (test requirements)", 2024-10-25
     @Test
     public void hasCityTest() {
         list = MockCityList();

@@ -60,15 +60,30 @@ public class CustomList extends ArrayAdapter<City> {
     public void addCity(City city){
         cities.add(city);
     }
-
+    //The following methods are from ChatGPT, "Help with the following: (test requirements)", 2024-10-25
+    //I didn't intend for it to write these methods, but it nonetheless did as part as helping me
+    //write tests.
+    //The documentation is is written by me
+    /**
+     * This checks whether a specific city object is in the list
+     * @param city - the city object we are looking for
+     * @return true if the list does contain the city
+     */
     public boolean hasCity(City city) {
         return cities.contains(city);
     }
 
+    /**
+     * This removes  a specific city object from the list
+     * @param city - the city object we want to remove
+     */
     public void deleteCity(City city) {
         cities.remove(city);
     }
-
+    /**
+     * This checks how many cities are in the list
+     * @return int - the number of cities in the list
+     */
     public int countCities() {
         return cities.size();
     }
